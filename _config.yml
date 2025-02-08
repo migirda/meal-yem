@@ -33,7 +33,9 @@ defaults:
       layout: "team"
 
 sass:
-  style: compressed # possible values: nested expanded compact compressed
+  sass_dir: _sass
+  style: compressed
+
 
 plugins:
   - jekyll-environment-variables

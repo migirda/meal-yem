@@ -27,7 +27,14 @@ $sub-footer-background-color: darken($primary, 10%);
 $sub-footer-text-color: $white;
 
 // Bootstrap 4.6
+
+// 1. Include Bootstrap functions first
 @import "bootstrap/scss/functions";
+
+// 2. Include our variable overrides here
+@import "bootstrap-variables";
+
+// 3. Include main bootstrap variables and functions
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/root";
@@ -36,6 +43,20 @@ $sub-footer-text-color: $white;
 @import "bootstrap/scss/images";
 @import "bootstrap/scss/grid";
 @import "bootstrap/scss/utilities";
+
+// 4. Include optional Bootstrap components
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+
+// 5. Include Bootstrap helpers and utilities
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
 
 // Libraries
 @import "libraries/hamburgers/hamburgers";
@@ -59,7 +80,6 @@ $sub-footer-text-color: $white;
 @import "components/strip";
 @import "components/feature";
 @import "components/social";
-// @import "components/fonts"; // Uncomment this line to self host font
 
 // Pages
 @import "pages/page-home";
